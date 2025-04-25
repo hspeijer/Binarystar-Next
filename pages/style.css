@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Roobert TRIAL";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 500;
+  src: url("/fonts/rooberttrialvf1.ttf") ;
+}
+ 
+@font-face {
+  font-family: "RoobertTRIAL-Regular";
+  font-style: normal;
+  font-format: truetype;
+  font-weight: 400;
+  src: url("/fonts/rooberttrialvf.ttf") ;
+}
+ 
+:root {
+  --dl-layout-size-large: 144px;
+  --dl-layout-size-small: 48px;
+  --dl-layout-space-unit: 16px;
+  --dl-layout-size-medium: 96px;
+  --dl-layout-size-xlarge: 192px;
+  --dl-layout-size-xsmall: 16px;
+  --dl-color-theme-accent1: #91C77C;
+  --dl-color-theme-accent2: #ACC4F5;
+  --dl-layout-radius-round: 50%;
+  --dl-layout-size-xxlarge: 288px;
+  --dl-color-theme-primary1: #FD744F;
+  --dl-color-theme-primary2: #E33203;
+  --dl-layout-size-maxwidth: 1400px;
+  --dl-layout-radius-radius2: 2px;
+  --dl-layout-radius-radius4: 4px;
+  --dl-layout-radius-radius8: 8px;
+  --dl-layout-space-halfunit: 8px;
+  --dl-layout-space-sixunits: 96px;
+  --dl-layout-space-twounits: 32px;
+  --dl-color-theme-secondary1: #F2F6FF;
+  --dl-color-theme-secondary2: #F1F2F5;
+  --dl-layout-space-fiveunits: 80px;
+  --dl-layout-space-fourunits: 64px;
+  --dl-layout-space-threeunits: 48px;
+  --dl-color-theme-neutral-dark: #1A1A1A;
+  --dl-layout-radius-cardradius: 8px;
+  --dl-color-theme-neutral-light: #FFFFFF;
+  --dl-layout-radius-imageradius: 8px;
+  --dl-layout-radius-inputradius: 24px;
+  --dl-layout-radius-buttonradius: 24px;
+  --dl-layout-space-oneandhalfunits: 24px;
+  --dl-color-binarystar-secondary-color: #ff5c00ff;
+}
+ 
+.teleport-show {
+  display: flex !important;
+  transform: none !important;
+}
+ 
+
+ 
+.primary {
+  color: var(--text-icons-light-on-color, #FFF);
+  cursor: pointer;
+  height: 56px;
+  display: flex;
+  background: var(--secondary-color);
+  align-items: center;
+  user-select: none;
+  white-space: nowrap;
+}
+ 
+.bracketLeft {
+  top: 0;
+  left: -15px;
+  width: 8px;
+  height: 66px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-image: url("/bracket-left.svg");
+  background-repeat: no-repeat;
+}
+ 
+.content {
+  height: 56px;
+  display: inline-block;
+  padding: 0 24;
+  font-size: 16px;
+  align-self: center;
+  text-align: center;
+  font-weight: 500;
+  line-height: 56px;
+  letter-spacing: -0.45px;
+}
+ 
+.bracketRight {
+  top: 0;
+  right: -15px;
+  width: 8px;
+  height: 66px;
+  content: "";
+  display: inline-block;
+  position: relative;
+  background-image: url("/bracket-right.svg");
+  background-repeat: no-repeat;
+}
+ 
+.card {
+  gap: 32px;
+  height: 100%;
+  padding: 40;
+  flex-grow: 1;
+  max-width: 344;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.titleCard {
+  gap: 32px;
+  height: 100%;
+  padding: 40;
+  flex-grow: 1;
+  max-width: 344;
+  align-items: flex-start;
+  flex-direction: column;
+}
+ 
+.Content {
+  font-size: 16px;
+  font-family: "RoobertTRIAL-Regular";
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+ 
+.Button1 {
+  font-size: 14px;
+  font-family: "Roobert TRIAL";
+  font-weight: 500;
+  text-transform: none;
+  text-decoration: none;
+}
+ 
+
+ 
+@media(max-width: 650px) {
+  .card {
+    max-width: 650;
+  }
+  .titleCard {
+    max-width: 650;
+  }
+}
